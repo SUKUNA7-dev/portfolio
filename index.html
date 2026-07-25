@@ -1,64 +1,178 @@
-<!DOCTYPE html>
-<html>
+!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Abdullahi Hamidu - Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdullahi Hamidu - Portfolio</title>
+<style>
+  :root {
+    --bg: #121212;
+    --bg-soft: #1c1c1c;
+    --text: #e8e8e8;
+    --muted: #a0a0a0;
+    --accent: #00cc88;
+    --border: #2a2a2a;
+  }
+ 
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+  }
+ 
+  header {
+    text-align: center;
+    padding: 50px 20px 30px;
+  }
+ 
+  header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    margin-bottom: 15px;
+  }
+ 
+  header h1 {
+    color: var(--accent);
+    font-size: 2rem;
+  }
+ 
+  header p {
+    color: var(--muted);
+    margin-top: 5px;
+  }
+ 
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+ 
+  nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+ 
+  nav a:hover {
+    color: var(--accent);
+  }
+ 
+  section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 45px 20px;
+  }
+ 
+  section h2 {
+    color: var(--accent);
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+ 
+  section:not(:last-of-type) {
+    border-bottom: 1px solid var(--border);
+  }
+ 
+  ul {
+    list-style: none;
+  }
+ 
+  ul li {
+    background-color: var(--bg-soft);
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border-left: 3px solid var(--accent);
+  }
+ 
+  .edu-box {
+    background-color: var(--bg-soft);
+    padding: 15px;
+    border-radius: 6px;
+  }
+ 
+  .contact p {
+    margin-bottom: 6px;
+  }
+ 
+  .contact a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+ 
+  footer {
+    text-align: center;
+    padding: 25px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+  }
+</style>
 </head>
-
-<body bgcolor="#1A1A1A" text="white">
-
-<center>
-    <h1 style="color:#00FF99;">Abdullahi Hamidu</h1>
-    <h3 style="color:white;">Information Systems Student</h3>
-
-    <img src="IMG_20260326_184333_944.jpg" width="180" height="180" alt="My Photo">
-
-    <hr color="#00FF99" width="80%">
-
-    <a href="#about" style="color:#00FF99;">About</a> |
-    <a href="#skills" style="color:#00FF99;">Skills</a> |
-    <a href="#education" style="color:#00FF99;">Education</a> |
-    <a href="#contact" style="color:#00FF99;">Contact</a>
-
-    <hr color="#00FF99" width="80%">
-</center>
-
-<h2 id="about" style="color:#00FF99;">About Me</h2>
-
-<p>
-Hello! I am Abdullahi Hamidu, a third-year Information Systems student at the American University of Nigeria (AUN). I enjoy learning about technology and developing new skills. I am currently studying HTML, CSS, Python, and Graphic Design to improve my knowledge in web development.
-</p>
-
-<h2 id="skills" style="color:#00FF99;">Skills</h2>
-
-<ul>
+<body>
+ 
+<header>
+  <img src="IMG_20260326_184333_944.jpg" alt="My Photo">
+  <h1>Abdullahi Hamidu</h1>
+  <p>Information Systems Student</p>
+</header>
+ 
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
+ 
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I am Abdullahi Hamidu, a third-year Information Systems student at the American University of Nigeria (AUN). I enjoy learning about technology and developing new skills. I am currently studying HTML, CSS, Python, and Graphic Design to improve my knowledge in web development.</p>
+</section>
+ 
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
     <li>HTML</li>
     <li>CSS</li>
     <li>Python</li>
     <li>Graphic Design</li>
     <li>Google Workspace</li>
-</ul>
-
-<h2 id="education" style="color:#00FF99;">Education</h2>
-
-<p>
-<b>American University of Nigeria (AUN)</b><br>
-Bachelor of Science (B.Sc.) Information Systems<br>
-Third Year
-</p>
-
-<h2 id="contact" style="color:#00FF99;">Contact</h2>
-
-<p>
-Email: abdullahi.hamidu@aun.edu.ng<br>
-Phone: 09077772550<br>
-Location: Yola, Adamawa State, Nigeria
-</p>
-
-<hr color="#00FF99">
-
-<center>
-<p>© 2026 | Designed by Abdullahi Hamidu</p>
-</center>
-
+  </ul>
+</section>
+ 
+<section id="education">
+  <h2>Education</h2>
+  <div class="edu-box">
+    <strong>American University of Nigeria (AUN)</strong><br>
+    Bachelor of Science (B.Sc.) Information Systems<br>
+    Third Year
+  </div>
+</section>
+ 
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:abdullahi.hamidu@aun.edu.ng">abdullahi.hamidu@aun.edu.ng</a></p>
+  <p>Phone: 09077772550</p>
+  <p>Location: Yola, Adamawa State, Nigeria</p>
+</section>
+ 
+<footer>
+  &copy; 2026 | Designed by Abdullahi Hamidu
+</footer>
+ 
 </body>
 </html>
